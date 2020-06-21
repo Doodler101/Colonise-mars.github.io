@@ -20,6 +20,8 @@ let Game = {
     },
 }
 
+let intro = 0
+
 let continueAnimating = true;
 
 let formatNumber = function(num) {
@@ -82,6 +84,7 @@ let DOM = {
     }, 5500)
     setTimeout(() => {
         insertLog("click the blue button to start harnessing energy")
+        intro = 1
     }, 8500)
 }
 
@@ -485,10 +488,12 @@ let loop = function () {
 
             // Watts
             {
-                if (Game.LogStatus.Watts === 0 && Game.Watts > 14) {
-                    Game.LogStatus.Watts++
-                    insertLog("hover over solar panel and click the plus button. This will help you accumulate energy")
-                } 
+                if (intro === 1) {
+                    if (Game.LogStatus.Watts === 0 && Game.Watts > 14) {
+                        Game.LogStatus.Watts++
+                        insertLog("hover over solar panel and click the plus button. This will help you accumulate energy")
+                    } 
+                }
                 if (Game.LogStatus.Watts === 1 && Game.Watts > 99) {
                     Game.LogStatus.Watts++
                     insertLog("100 Watts. Now we're talking")
