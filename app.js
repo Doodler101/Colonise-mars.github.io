@@ -453,38 +453,37 @@ let loop = function () {
             {
                 if (Game.LogStatus.GeothermalStation === 0 && Game.building[5] > 0) {
                     Game.LogStatus.GeothermalStation++
-                    insertLog("Your first Geothermal energy drill. This will produce 600 watt an hour")
                     insertLog(`Your first Geothermal energy drill. This will produce ${600 * Game.multiplier[5]} watts an hour`)
                 } 
                 if (Game.LogStatus.GeothermalStation === 1 && Game.building[5] > 4) {
                     Game.LogStatus.GeothermalStation++
                     insertLog("This is the key to getting energy on mars")
-                    addUpgrade("More Resistant Drills", "Geothermal Station", 4000000)
+                    addUpgrade("More Resistant Drills", "Geothermal Energy", 4000000)
                 } 
                 if (Game.LogStatus.GeothermalStation === 1 && Game.building[5] > 9) {
                     Game.LogStatus.GeothermalStation++
                     insertLog("This is the key to getting energy on mars")
-                    addUpgrade("More Efficient Turbines", "Geothermal Station", 10000000)
+                    addUpgrade("More Efficient Turbines", "Geothermal Energy", 10000000)
                 } 
                 if (Game.LogStatus.GeothermalStation === 2 && Game.building[5] > 24) {
                     Game.LogStatus.GeothermalStation++
                     insertLog("Geothermal energy is the way forward")
-                    addUpgrade("Bigger Cooling Fan", "Geothermal Station", 60000000)
+                    addUpgrade("Bigger Cooling Fan", "Geothermal Energy", 60000000)
                 }
                 if (Game.LogStatus.GeothermalStation === 3 && Game.building[5] > 49) {
                     Game.LogStatus.GeothermalStation++
                     insertLog("Environmentally friendly energy")
-                    addUpgrade("Bigger Station", "Geothermal Station", 2000000000)
+                    addUpgrade("Bigger Station", "Geothermal Energy", 2000000000)
                 }
                 if (Game.LogStatus.GeothermalStation === 4 && Game.building[5] > 74) {
                     Game.LogStatus.GeothermalStation++
                     insertLog("Greta Thunberg would be proud")
-                    addUpgrade("Sharper drills", "Geothermal Station", 72000000000)
+                    addUpgrade("Sharper drills", "Geothermal Energy", 72000000000)
                 }
                 if (Game.LogStatus.GeothermalStation === 1 && Game.building[5] > 99) {
                     Game.LogStatus.GeothermalStation++
                     insertLog("This is the key to getting energy on mars")
-                    addUpgrade("Stronger Cooling Fan", "Geothermal Station", 2000000000000)
+                    addUpgrade("Stronger Cooling Fan", "Geothermal Energy", 2000000000000)
                 } 
 
             }
@@ -648,7 +647,7 @@ let loop = function () {
                     multiMap.set('Radioactive Material', 2)
                     multiMap.set('Potato Fields', 3)
                     multiMap.set('Nuclear Stations', 4)
-                    multiMap.set('Geothermal Station', 5)
+                    multiMap.set('Geothermal Energy', 5)
                     multiMap.set('All Buildings', "all")
                     multiMap.set('Click Power', "clickPower")
                     multiMap.set('End', 'end')
