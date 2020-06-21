@@ -84,7 +84,9 @@ let DOM = {
     }, 5500)
     setTimeout(() => {
         insertLog("click the blue button to start harnessing energy")
-        intro = 1
+        setTimeout(() => {
+            intro = 1
+        },2500)
     }, 8500)
 }
 
