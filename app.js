@@ -304,7 +304,7 @@ let loop = function () {
             {
                 if (Game.LogStatus.PotatoBattery === 0 && Game.building[1] > 0) {
                     Game.LogStatus.PotatoBattery++
-                    insertLog("Your first potato battery. This will produce one watt an hour")
+                    insertLog(`Your first potato battery. This will produce ${Game.multiplier[1]} watt an hour`)
 
                 } 
                 if (Game.LogStatus.PotatoBattery === 1 && Game.building[1] > 4) {
@@ -342,7 +342,7 @@ let loop = function () {
             {
                 if (Game.LogStatus.RadioactiveMaterial === 0 && Game.building[2] > 0) {
                     Game.LogStatus.RadioactiveMaterial ++
-                    insertLog("This Radioctive substance will  produce 8 watts per hour")
+                    insertLog(`This Radioactive substance will produce ${5 * Game.multiplier[2]} watts an hour`)
                 } 
                 if (Game.LogStatus.RadioactiveMaterial  === 1 && Game.building[2] > 4) {
                     Game.LogStatus.RadioactiveMaterial ++
@@ -379,7 +379,7 @@ let loop = function () {
             {
                 if (Game.LogStatus.PotatoField === 0 && Game.building[3] > 0) {
                     Game.LogStatus.PotatoField++
-                    insertLog("Your first potato field. This will produce 50 watts an hour")
+                    insertLog(`Your first potato field. This will produce ${20 * Game.multiplier[3]} watts an hour`)
                 } 
                 if (Game.LogStatus.PotatoField === 1 && Game.building[3] > 4) {
                     Game.LogStatus.PotatoField++
@@ -416,7 +416,7 @@ let loop = function () {
             {
                 if (Game.LogStatus.NuclearStation === 0 && Game.building[4] > 0) {
                     Game.LogStatus.NuclearStation++
-                    insertLog("Your first Nuclear Station. This will produce 300 watts an hour")
+                    insertLog(`Your first Nuclear Station. This will produce ${80 * Game.multiplier[4]} watts an hour`)
                 } 
                 if (Game.LogStatus.NuclearStation === 1 && Game.building[4] > 4) {
                     Game.LogStatus.NuclearStation++
@@ -453,7 +453,8 @@ let loop = function () {
             {
                 if (Game.LogStatus.GeothermalStation === 0 && Game.building[5] > 0) {
                     Game.LogStatus.GeothermalStation++
-                    insertLog("Your first Geothermal energy drill. This will produce 4000 watt an hour")
+                    insertLog("Your first Geothermal energy drill. This will produce 600 watt an hour")
+                    insertLog(`Your first Geothermal energy drill. This will produce ${600 * Game.multiplier[5]} watts an hour`)
                 } 
                 if (Game.LogStatus.GeothermalStation === 1 && Game.building[5] > 4) {
                     Game.LogStatus.GeothermalStation++
@@ -504,7 +505,7 @@ let loop = function () {
                 if (Game.LogStatus.Watts === 2 && Game.Watts > 999) {
                     Game.LogStatus.Watts++
                     insertLog("1,000 Watts. Keep it up")
-                    addUpgrade("Better Recources", "All Buildings", 3000)
+                    addUpgrade("Better Resources", "All Buildings", 3000)
                 }
                 if (Game.LogStatus.Watts === 3 && Game.Watts > 9999) {
                     Game.LogStatus.Watts++
