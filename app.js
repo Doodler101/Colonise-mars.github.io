@@ -75,13 +75,13 @@ let DOM = {
 {
     insertLog("You are the only survivor on mars after a hurricane")
     setTimeout(() => {
-        insertLog("You need to create enough energy to start up your rocket")
+        insertLog("You need to harness enough energy to start up your rocket")
     }, 3000)
     setTimeout(() => {
         insertLog("10,000,000 to be exact")
     }, 5500)
     setTimeout(() => {
-        insertLog("click the blue button to start creating energy")
+        insertLog("click the blue button to start harnessing energy")
     }, 8500)
 }
 
