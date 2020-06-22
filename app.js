@@ -80,7 +80,7 @@ let DOM = {
         insertLog("You need to harness enough energy to start up your rocket")
     }, 3000)
     setTimeout(() => {
-        insertLog("10,000,000 to be exact")
+        insertLog("50,000,000 to be exact")
     }, 5500)
     setTimeout(() => {
         insertLog("click the blue button to start harnessing energy")
@@ -519,7 +519,7 @@ let loop = function () {
                 if (Game.LogStatus.Watts === 5 && Game.Watts > 999999) {
                     Game.LogStatus.Watts++
                     insertLog("1 million Watts! Everyone here in Nasa HQ is proud of You")
-                    addUpgrade("Launch Rocket", "End", 10000000)
+                    addUpgrade("Launch Rocket", "End", 50000000)
                 }
 
             }
