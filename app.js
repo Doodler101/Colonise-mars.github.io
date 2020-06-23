@@ -218,7 +218,7 @@ let loop = function () {
                 } else {
                     Game.upgrades.push(new Upgrade(id, name, building, cost))
 
-                    let html = '<div class="item clearfix" id="%id%"><div class="upgrade__description">Rocket Ship</div><div class="right clearfix"><div class="item__value small">Use the power to <br>return home to earth</div><div class="item__percentage red">10,000,000</div><div class="item__delete"><button class="item__delete--btn"><i class="iconify" data-icon="ion:add" data-inline="false"></i></button></div></div></div>'
+                    let html = '<div class="item clearfix" id="%id%"><div class="upgrade__description">Rocket Ship</div><div class="right clearfix"><div class="item__value small">Use the power to <br>return home to earth</div><div class="item__percentage red">50,000,000</div><div class="item__delete"><button class="item__delete--btn"><i class="iconify" data-icon="ion:add" data-inline="false"></i></button></div></div></div>'
                     let newHtml = html.replace('%id%', id);
                     document.querySelector(".Upgrade__List").insertAdjacentHTML('beforeend', newHtml);
                 }
